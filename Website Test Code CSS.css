@@ -1,0 +1,112 @@
+.logo  {
+    position: absolute;
+    top: 40;
+    left: 40;
+    width:150px;
+    height:150px;
+   }
+
+h1  {
+    text-align:center;
+    font-size: 60px;
+    font-weight: bold;
+    color:white;
+    font-family: "Century Gothic", Times, serif;
+    margin-top:40px;
+   }
+
+   
+   body {
+    background: linear-gradient(-45deg, #6448a7, #5d3ecc, #81dad2, #56a86f);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+   .banner {
+    width: 100%;
+    height: 500px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    left:5%;
+    font-family: "Century Gothic"
+  }
+  
+  .banner a {
+    display: inline-block;
+    align-items:center;
+    width: 15%;
+    height: 100%;
+    float: left;
+    text-decoration: none;
+    color: white;
+    font-size:30px;
+    font-weight: bold;
+    margin-left:40px;
+    margin-right:40px;
+  }
+  
+  .banner a:hover {
+    color: #d30f0f7c;
+  }
+
+  button {
+    background-color:transparent;
+    color: white;
+    font-size: 40px;
+    transition: background-color 0.1s ease-in-out;
+    border: 2px solid white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius:100%;
+    padding:20px;
+    
+
+  }
+  
+  button:hover {
+    background-color:#d30f0f7c;
+  }
+
+.shooting-stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-image: url(shooting-stars.png);
+    background-size: cover;
+    background-position: center;
+    animation: shooting-stars-animation 10s linear infinite;
+  }
+  
+  @keyframes shooting-stars-animation {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+
+  .container {
+    margin-top: 350px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
